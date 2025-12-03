@@ -1,0 +1,81 @@
+### Operational Constraints
+
+The operational constraints represent the physical and technical limitations of the steam and energy production system:
+
+•⁠  ⁠*Maximum HP Steam Input (220 tons/hour)*: This is the upper limit of high-pressure steam that can be safely handled by the system infrastructure.
+•⁠  ⁠*Minimum Steam Requirement (90 tons/hour)*: This represents the baseline operational threshold. Running below this level would make the turbines operate inefficiently.
+•⁠  ⁠*Maximum MP Steam Extraction (100 tons/hour)*: The maximum amount of Medium Pressure steam that can be extracted.
+•⁠  ⁠*Maximum Energy Production (60 MWh)*: The maximum electricity generation capacity.
+
+These constraints create a complex operational window where managers must balance steam allocation between direct industrial use and electricity generation while maintaining system stability.
+
+### Solution Requirements
+
+The dual-component solution approach addresses both the technical optimization challenge and the user interface needs:
+
+1.⁠ ⁠*Optimization Model Requirements*:
+    - Must incorporate all operational constraints (min/max limits)
+    - Needs to account for variable demand patterns
+    - Should prioritize maximizing overall energy production efficiency
+    - Must be able to adapt to changing parameters
+    - Should identify optimal distribution of steam between direct use and electricity production
+2.⁠ ⁠*Chatbot Interface Requirements*:
+    - *Local Implementation*: Must run without reliance on external APIs for security.
+    - *Scenario Evaluation*: Needs to allow plant managers to test "what-if" scenarios (e.g., "What if MP steam consumption increases?").
+    - *Real-time Recommendations*: Should analyze current system state and suggest optimal adjustments.
+    - *Decision Impact Analysis*: Must clearly explain the cascading effects of different operational decisions.
+    - *User-Friendly Interface*: Should present complex optimization data in an accessible format.
+
+The ultimate success of this solution depends on the seamless integration of these two components.
+
+
+# Smart Energy Optimization Project
+
+## Project Overview
+
+•⁠  ⁠*Focus*: Optimizing the energy balance in a factory with 5 GTAs (Gas Turbine Alternators), 3 of which allow for MP steam extraction.
+•⁠  ⁠*Problem Statement*: How to optimize steam production and consumption for maximum energy efficiency.
+•⁠  ⁠*Factory*: OCP Production Unit.
+•⁠  ⁠*Data*: The provided dataset (`Data_Energie.csv`) contains operational data for the 3 GTAs with MP extraction capabilities.
+
+## Technical Components
+
+•⁠  ⁠*Steam Management*: The project involves managing HP (High Pressure) and MP (Medium Pressure) steam flows.
+•⁠  ⁠*Energy Production*: The turbines produce electricity but have specific operational constraints.
+•⁠  ⁠*Steam Flow*: HP steam is produced and can be either used directly by consumers or sent through the GTAs to produce electricity and MP steam.
+
+## Operational Constraints (Summary)
+
+•⁠  ⁠Maximum input of HP steam: 220 tons per hour
+•⁠  ⁠Minimum steam requirements: 90 tons per hour
+•⁠  ⁠Maximum MP steam extraction: 100 tons per hour
+•⁠  ⁠Maximum Energy Production: 60 MWh
+
+## Solution Requirements
+
+The project requires a two-part solution:
+
+1.⁠ ⁠*Optimization Model*: To maximize energy production while respecting operational constraints.
+2.⁠ ⁠*Chatbot Interface*: To evaluate different scenarios and provide recommendations.
+
+The chatbot needs to:
+
+•⁠  ⁠Be implemented locally (not via API)
+•⁠  ⁠Allow evaluation of different scenarios (e.g., "Reduce sulfuric cadence by 20%?", "Increase MP steam consumption?")
+•⁠  ⁠Provide real-time recommendations
+•⁠  ⁠Help managers understand impacts of different decisions
+
+## Target Users
+
+The primary users will be plant managers who oversee energy production and steam management for the facility.
+
+## Expected Deliverables
+
+•⁠  ⁠Prototype of an optimization model
+•⁠  ⁠A chatbot that can simulate different scenarios
+•⁠  ⁠Real-time monitoring capabilities
+•⁠  ⁠Automatic recommendations for optimization
+
+## Project Context
+
+This is a challenge focusing on industrial applications. Students have the freedom to understand the problems and propose their own solutions.
